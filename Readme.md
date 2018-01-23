@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ангелина Дорашева](https://up.htmlacademy.ru/adaptive/13/user/280899).
-* Наставник: `Неизвестно`.
+* Наставник: "Без наставника, повторное прохождение".
 
 ---
 
