@@ -3,19 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <div class="container">
+      <div class="container container--header">
         <div class="page-header__wrapper">
-          <div class="logo">
-            <a class="logo__link" href="index.html">
-              <img class="logo__img" src="#">
-              <div class="logo__text">
-                <span class="logo__part1">Cat</span><span class="logo__part2">Energy</span>
-              </div>
-            </a>
-          </div>
+          <a class="logo" href="index.html">
+            <img class="logo__img" src="#" width="33" height="38">
+            <img class="logo__img logo__img--text" src="#" width="101" height="18">
+          </a>
           <a class="btn" href="#">открыть</a>
         </div>
       </div>
@@ -46,28 +44,29 @@
           <article class="programmes__item">
             <h3 class="programmes__item-title">Похудение</h3>
             <p class="programmes__item-text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <div class="programmes__item-more">Каталог slim</div>
+            <a class="programmes__item-more" href="catalog.html">Каталог slim</a>
           </article>
           <article class="programmes__item">
-            <h3 class="programmes__item-title">Набор массы</h3>
+            <h3 class="programmes__item-title programmes__item-title--pro">Набор массы</h3>
             <p class="programmes__item-text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <div class="programmes__item-more">Каталог pro</div>
+            <a class="programmes__item-more" href="catalog.html">Каталог pro</a>
           </article>
         </div>
       </section>
       <section class="features">
         <div class="container">
+          <h2 class="features__title">Как это работает?</h2>
           <article class="features__item">
-            <p class="features__item-text">Функциональное питание содержит только полезные питательные вещества.</p>
+            <p class="features__item-text features__item-text--leaf">Функциональное питание содержит только полезные питательные вещества.</p>
           </article>
           <article class="features__item">
-            <p class="features__item-text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+            <p class="features__item-text features__item-text--powder">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
           </article>
           <article class="features__item">
-            <p class="features__item-text">Замените один-два приема обычной еды на наше фунцкциональное питание.</p>
+            <p class="features__item-text features__item-text--dining">Замените один-два приема обычной еды на наше фунцкциональное питание.</p>
           </article>
           <article class="features__item">
-            <p class="features__item-text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            <p class="features__item-text features__item-text--clock">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
           </article>
         </div>
       </section>
@@ -86,49 +85,44 @@
             </div>
           </div>
           <div class="example__note">затраты на питание: 15 000 руб.</div>
-          <div class="slider">
-            <div class="slider__scale">
-              <input class="slider__scale-toggle" type="radio" name="slider" id="btn-1" checked>
-              <input class="slider__scale-toggle" type="radio" name="slider" id="btn-2">
-            </div>
-            <div class="slider__controles">
-              <label class="slider__control slider__control--left" for="btn-1">Было</label>
-              <label class="slider__control slider__control--right" for="btn-2">Стало</label>
-            </div>
-            <div class="slider__slides">
-              <div class="slider__slide slider__slide--one"></div>
-              <div class="slider__slide slider__slide--two"></div>
-            </div>
+        </div>
+        <div class="slider">
+          <input class="slider__scale-toggle" type="radio" name="toggle" id="left" checked>
+          <input class="slider__scale-toggle" type="radio" name="toggle" id="right">
+
+          <span class="slider__note slider__note--before">Было</span>
+          <span class="slider__note slider__note--after">Стало</span>
+
+          <div class="slider__controles">
+            <label class="slider__control slider__control--left" for="left"></label>
+            <label class="slider__control slider__control--right" for="right"></label>
+          </div>
+          <div class="slider__slides">
+            <div class="slider__slide slider__slide--1"></div>
+            <div class="slider__slide slider__slide--2"></div>
           </div>
         </div>
       </section>
       <section class="contacts">
-        <div class="container">
-          <div class="contacts__title">Приглашаем к сотрудничеству дилеров!</div>
+        <div class="container container--contacts">
+          <div class="contacts__title">Приглашаем<br> к сотрудничеству дилеров!</div>
           <div class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</div>
         </div>
       </section>
       <div class="map"></div>
     </main>
     <footer class="page-footer">
-      <div class="container">
-        <div class="logo logo--footer">
-          <a class="logo__link logo__link--footer" href="index.html">
-            <div class="logo__text logo__text">
-              <span class="logo__part1 logo__part1--footer">Cat</span>
-              <span class="logo__part2 logo__part2--footer">Energy</span>
-            </div>
-          </a>
-        </div>
-        <div class="social">
-          <a class="social__item" href="#"></a>
-          <a class="social__item" href="#"></a>
-          <a class="social__item" href="#"></a>
-        </div>
-        <div class="developer">
-          <a class="developer__name" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive"><img class="developer__logo-img" src="#"></a>
-        </div>
+      <a class="logo logo--footer" href="index.html">
+        <img class="logo__img logo__img--footer" src="#" width="130" height="25">
+      </a>
+      <div class="social">
+        <a class="social__item" href="#">vk</a>
+        <a class="social__item" href="#">inst</a>
+        <a class="social__item" href="#">fb</a>
+      </div>
+      <div class="developer">
+        <a class="developer__name" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive"><img class="developer__logo-img" src="#"></a>
       </div>
     </footer>
   </body>
