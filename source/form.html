@@ -8,16 +8,12 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container">
+      <div class="container container--header">
         <div class="page-header__wrapper">
-          <div class="logo">
-            <a class="logo__link" href="index.html">
-              <div class="logo__wrapper">
-                <img class="logo__img" src="#">
-                <img class="logo__img-text" src="#">
-              </div>
-            </a>
-          </div>
+          <a class="logo" href="index.html">
+            <img class="logo__img" src="#" width="33" height="38">
+            <img class="logo__img logo__img--text" src="#" width="101" height="18">
+          </a>
           <a class="btn" href="#">открыть</a>
         </div>
       </div>
@@ -37,35 +33,37 @@
     </header>
     <main>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <h1 class="form__title">Подбор программы</h1>
-        <p class="form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
-        <fieldset class="form__section">
+        <div class="container">
+          <h1 class="form__title">Подбор программы</h1>
+          <p class="form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        </div>
+        <fieldset class="form__section form__section--name">
           <div class="form__wrapper">
             <label class="form__label" for="name">Имя:*</label>
-            <input class="form__input" type="text" name="name" id="name" placeholder="Барсик">
+            <input class="form__input form__input--long" type="text" name="name" id="name" placeholder="Барсик">
           </div>
           <div class="form__wrapper">
             <label class="form__label" for="weight">Вес (кг):*</label>
             <input class="form__input" type="text" name="weight" id="weight" placeholder="7">
           </div>
           <div class="form__wrapper">
-            <label class="form__label" for="age">Возраст (лет):</label>
-            <input class="form__input" type="text" name="age" id="age" placeholder="7">
+            <label class="form__label" for="age">Возраст&nbsp;(лет):</label>
+            <input class="form__input form__input--short" type="text" name="age" id="age" placeholder="7">
           </div>
         </fieldset>
 
-        <fieldset class="form__section">
+        <fieldset class="form__section form__section--programmes">
           <div class="form__wrapper">
-            <label class="form__label" for="slim">Похудение</label>
-            <input class="form__input" type="radio" name="slim" id="slim" checked="checked">
+            <label class="form__label--programmes" for="slim">Похудение</label>
+            <input class="form__input form__input--hidden" type="radio" name="slim" id="slim" checked="checked">
           </div>
           <div class="form__wrapper">
-            <label class="form__label" for="fat">Набор массы</label>
-            <input class="form__input" type="radio" name="fat" id="fat">
+            <label class="form__label--programmes" for="fat">Набор массы</label>
+            <input class="form__input form__input--hidden" type="radio" name="fat" id="fat">
           </div>
           <div class="form__wrapper">
-            <label class="form__label" for="advice">Не знаю (нужен ваш совет)</label>
-            <input class="form__input" type="radio" name="advice" id="advice">
+            <label class="form__label--programmes" for="advice">Не знаю (нужен ваш совет)</label>
+            <input class="form__input form__input--hidden" type="radio" name="advice" id="advice">
           </div>
         </fieldset>
 
@@ -73,11 +71,11 @@
           <h2 class="form__section-title">Контактные данные (владельца кота)</h2>
           <div class="form__wrapper">
             <label class="form__label" for="email">E-mail:*</label>
-            <input class="form__input" type="email" name="email" id="email"  placeholder="kuklachev@gmail.com">
+            <input class="form__input form__input--middle" type="email" name="email" id="email"  placeholder="kuklachev@gmail.com">
           </div>
           <div class="form__wrapper">
             <label class="form__label" for="phone">Телефон:*</label>
-            <input class="form__input" type="number" name="phone" id="phone" placeholder="8 (960) 900-60-90">
+            <input class="form__input" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90">
           </div>
         </fieldset>
         <fieldset class="form__section">
@@ -86,52 +84,46 @@
         </fieldset>
         <fieldset class="form__section">
           <h2 class="form__section-title">Дополнительно</h2>
-          <div class="form__wrapper">
+          <div class="form__wrapper form__wrapper--add">
             <label class="form__label" for="sugar">Сахарозаменитель</label>
-            <input class="form__input" type="checkbox" name="sugar" id="sugar" checked="checked">
+            <input class="form__input form__input--hidden" type="checkbox" name="sugar" id="sugar" checked="checked">
           </div>
-          <div class="form__wrapper">
+          <div class="form__wrapper form__wrapper--add">
             <label class="form__label" for="water">Питьевая вода</label>
-            <input class="form__input" type="checkbox" name="water" id="water">
+            <input class="form__input form__input--hidden" type="checkbox" name="water" id="water">
           </div>
-          <div class="form__wrapper">
+          <div class="form__wrapper form__wrapper--add">
             <label class="form__label" for="milk">Молоко</label>
-            <input class="form__input" type="checkbox" name="milk" id="milk">
+            <input class="form__input form__input--hidden" type="checkbox" name="milk" id="milk">
           </div>
-          <div class="form__wrapper">
+          <div class="form__wrapper form__wrapper--indent">
             <label class="form__label" for="vitamins">Витамины</label>
-            <input class="form__input" type="checkbox" name="vitamins" id="vitamins">
+            <input class="form__input form__input--hidden" type="checkbox" name="vitamins" id="vitamins">
           </div>
           <input class="btn btn--order" type="submit" value="Отправить заявку">
-          <div class="form__note">* &lsquo; Обязательные поля</div>
+          <div class="form__note">* &mdash; Обязательные поля</div>
         </fieldset>
       </form>
-      <section class="contacts">
-        <div class="container">
-          <div class="contacts__title">Приглашаем к сотрудничеству дилеров!</div>
+      <section class="contacts contacts--grey">
+        <div class="container container--contacts">
+          <div class="contacts__title">Приглашаем<br> к сотрудничеству дилеров!</div>
           <div class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</div>
         </div>
       </section>
       <div class="map"></div>
     </main>
     <footer class="page-footer">
-      <div class="container">
-        <div class="logo logo--footer">
-          <a class="logo__link logo__link--footer" href="index.html">
-            <div class="logo__wrapper">
-              <img class="logo__img-text" src="#">
-            </div>
-          </a>
-        </div>
-        <div class="social">
-          <a class="social__item" href="#"></a>
-          <a class="social__item" href="#"></a>
-          <a class="social__item" href="#"></a>
-        </div>
-        <div class="developer">
-          <a class="developer__name" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive"><img class="developer__logo-img" src="#"></a>
-        </div>
+      <a class="logo logo--footer" href="index.html">
+        <img class="logo__img logo__img--footer" src="#" width="130" height="25">
+      </a>
+      <div class="social">
+        <a class="social__item" href="#">vk</a>
+        <a class="social__item" href="#">inst</a>
+        <a class="social__item" href="#">fb</a>
+      </div>
+      <div class="developer">
+        <a class="developer__name" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive"><img class="developer__logo-img" src="#"></a>
       </div>
     </footer>
   </body>
